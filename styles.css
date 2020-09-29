@@ -98,3 +98,35 @@ h1 {
   top: 100px;
   left: 120px;
 }
+
+
+.left_arm:hover{
+  transform: rotate(45deg);
+}
+.right_arm:hover{
+  transform: rotate(30deg);
+  transition: 1s ease-in;
+}
+
+.head:hover{
+  transform: translateY(-20px) skew(20deg);
+  transition: 0.5s linear;
+}
+
+.lower_body:hover{
+  transform: skewX(20deg);
+  transition: 1s ease-in-out;
+}
+
+.upper_body:hover{
+  transform: skew(15deg);
+}
+
+.torso:hover{
+  transform: rotate(360deg);
+  transition: 1s;
+}
+.eyes:hover{
+  transform: translate(10px,10px); 
+  transition: 1s linear;
+}
