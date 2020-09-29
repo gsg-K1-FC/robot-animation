@@ -98,3 +98,62 @@ h1 {
   top: 100px;
   left: 120px;
 }
+
+
+.android:hover{
+  transform: translateX(40px);
+  transition: all 1.5s ease-in-out;
+}
+
+
+.head:hover {
+transform: rotate(20deg);
+transition: all .5s ease-in-out;
+
+}
+
+.eyes:hover {
+  transform: translateX(20px) ;
+  transition: all .5s ease-in-out;
+}
+
+
+
+.left_arm:hover{
+transform: rotate(30deg);
+transition: all .5s ease-in-out;
+}
+
+.right_arm:hover {
+  transform: rotate(-30deg);
+  transition: all .5s ease-in-out;
+}
+
+.torso {
+}
+
+.lower_body:hover {
+  transform: translateY(20px) ;
+  transition: all .5s ease-in-out;
+}
+
+.upper_body:hover {
+  transform: rotate(6deg) skewY(-6deg) skewX(14deg)   ;
+  transition: all .5s ease-in-out;
+
+}
+
+.left_leg:hover {
+  transform: skew(-30deg);
+  transition: all .5s ease-in-out;
+}
+
+.right_leg:hover {
+  transform: skew(30deg);
+  transition: all .5s ease-in-out;
+}
+
+.left_eye:hover,
+.right_eye:hover {
+
+}
