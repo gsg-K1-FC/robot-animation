@@ -8,14 +8,33 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+  }
+}
+.animations {
+  animation-name: stretch;
+  animation-duration:2s; 
+  animation-timing-function: steps(4);
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state:initial;
+}
 .head,
 .left_arm,
 .torso,
 .right_arm,
 .left_leg,
 .right_leg {
-  background-color: #5f93e8;
+  background-color: #6e234d;
+  animation: coloring 3s infinite;
+}@keyframes coloring 
+{
+  10% {
+    background-color: rgb(24, 78, 7);
+  }
 }
 
 .head {
@@ -24,75 +43,109 @@ h1 {
   height: 150px;
   border-radius: 200px 200px 0 0;
   margin-bottom: 10px;
+  animation: head 3s infinite;
 }
-
+@keyframes head {
+  
+  10% {
+    transform: rotate(40deg) translate(0px , 8px);
+    background-color: rgb(24, 78, 7);
+  }
+}
 .eyes {
   display: flex;
+  animation:eyes 3s infinite ;
+}@keyframes eyes{
+  0% {
+    transform: scale(.3);
+  }
+  10% {
+    transform: scale(2);
+  }
 }
-
 .upper_body {
   width: 300px;
   height: 150px;
   display: flex;
 }
-
 .left_arm,
 .right_arm {
   width: 40px;
   height: 125px;
   border-radius: 100px;
 }
-
 .left_arm {
   margin-right: 10px;
-}
+  animation:left-wave 3s infinite;
+}@keyframes left-wave{ 
 
+  10%{
+    transform: rotate(25deg) translate(10px , 0px);
+    background-color: rgb(24, 78, 7);
+  }
+}
 .right_arm {
   margin-left: 10px;
+  animation:right-wave 3s infinite ;
+}@keyframes right-wave {
+10% {
+  transform: rotate(-25deg) translate(-20px , 0px);
+    background-color: rgb(24, 78, 7);
 }
-
+}
 .torso {
   width: 200px;
   height: 200px;
   border-radius: 0 0 50px 50px;
 }
-
 .lower_body {
   width: 200px;
   height: 200px;
   margin: 0 auto;
   display: flex;
 }
-
 .left_leg,
 .right_leg {
   width: 40px;
   height: 120px;
   border-radius: 0 0 100px 100px;
 }
-
 .left_leg {
   margin-left: 45px;
+  animation: leg-left 3s infinite;
+}@keyframes leg-left {
+  10% {
+    transform: rotate(25deg);
+    background-color: rgb(24, 78, 7);
+  }
 }
-
 .right_leg {
   margin-left: 30px;
+  animation:leg-rigth 3s infinite ;
+}@keyframes leg-rigth {
+  10%{
+  transform: rotate(-25deg);
+    background-color: rgb(24, 78, 7);
+  }
 }
-
 .left_eye,
 .right_eye {
   width: 20px;
   height: 20px;
   border-radius: 15px;
   background-color: white;
+  animation : eye-color 3s infinite;
+}@keyframes eye-color {
+  10% {
+    background-color: rgb(199, 118, 118);
+  }
 }
-
 .left_eye {
   position: relative;
   top: 100px;
   left: 40px;
+  animation: eye-color 3s infinite;
 }
-
 .right_eye {
   position: relative;
   top: 100px;
