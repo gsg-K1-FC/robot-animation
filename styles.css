@@ -98,3 +98,128 @@ h1 {
   top: 100px;
   left: 120px;
 }
+.pack{
+  width: 25px; 
+  height: 20px;
+  background-color: blue;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  opacity: 0.3;
+}
+
+.packs{
+  width: 55px; 
+  height: 75px;
+  display: grid;
+  grid-template-columns: 25px 25px;
+  grid-column-gap: 5px; 
+  grid-row-gap: 5px;
+  margin: 70px auto;
+}
+
+.first{
+    border-radius: 7px 3px 3px 5px;
+}
+.second{
+    border-radius: 3px 7px 3px 3px;
+}
+.third,.fourth{
+  border-radius: 3px;
+}
+.fifth{
+  border-radius: 3px 3px 3px 7px;
+}
+.sixth{
+  border-radius: 3px 3px 7px 3px;
+}
+
+/* Jumping Jacks Move */
+.right_arm{
+  transform-origin: top;
+  animation: rotateArmRight 0.5s infinite alternate;
+}
+.left_arm{
+  transform-origin: top;
+  animation: rotateArmLeft 0.5s infinite alternate;
+}
+.right_leg{
+  transform-origin: top; 
+  animation: rotateLegRight 0.5s infinite alternate;
+}
+.left_leg{
+  transform-origin: top; 
+  animation: rotateLegLeft 0.5s infinite alternate;
+}
+
+.torso{
+  animation: shiftUp 0.5s infinite  alternate; 
+}
+.head{
+  animation: shiftUp 0.5s infinite  alternate;
+}  
+
+@keyframes shift{
+  
+}
+
+@keyframes rotateArmRight{
+  0%{
+    transform:rotate(-140deg);
+  } 
+}
+
+@keyframes rotateArmLeft{
+  0%{
+    transform:rotate(140deg);
+  } 
+}
+
+@keyframes rotateLegRight{
+  0%{
+    transform:rotate(-20deg);
+  } 
+}  
+
+@keyframes rotateLegLeft{
+  0%{
+    transform:rotate(20deg);
+  } 
+}
+
+@keyframes shiftUp{
+  0%{
+    transform: translateY(-20px);  
+  }
+}
+
+
+
+.left_arm:hover{
+  transform: rotate(45deg);
+}
+.right_arm:hover{
+  transform: rotate(30deg);
+  transition: 1s ease-in;
+}
+
+.head:hover{
+  transform: translateY(-20px) skew(20deg);
+  transition: 0.5s linear;
+}
+
+.lower_body:hover{
+  transform: skewX(20deg);
+  transition: 1s ease-in-out;
+}
+
+.upper_body:hover{
+  transform: skew(15deg);
+}
+
+.torso:hover{
+  transform: rotate(360deg);
+  transition: 1s;
+}
+.eyes:hover{
+  transform: translate(10px,10px); 
+  transition: 1s linear;
+}
