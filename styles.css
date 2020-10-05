@@ -98,3 +98,100 @@ h1 {
   top: 100px;
   left: 120px;
 }
+
+/* .left_eye:hover, .right_eye:hover{
+  transform: scale(2);
+}
+
+.left_arm:hover{
+  background-color: greenyellow;
+  transform: rotate(30deg);
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+
+.right_arm:hover{
+  transform: rotate(-30deg);
+}
+
+.android:hover{
+  transform: translateX(40px);
+  transition-property:;
+  transition-duration: 2s;
+  color: greenyellow; 
+} */
+
+.right_arm{
+  animation: rightarm 2s infinite;
+}
+
+.left_arm{
+  animation: rightarm 2s infinite;
+}
+
+@keyframes rightarm{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-30deg);
+    background-color: greenyellow;
+  }
+}
+
+@keyframes arms{
+  0%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+    background-color: #5f93e8;
+  }
+}
+
+
+
+
+.right_leg{
+  animation: legs 2s infinite;
+}
+
+.left_leg{
+  animation: legs 2s infinite;
+}
+
+@keyframes legs{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(30deg);
+    background-color: greenyellow;
+  }
+}
+
+
+.torso{
+  animation: tor 2s infinite;
+}
+
+@keyframes tor{
+  0%{
+
+  }
+  100%{
+    transform: scale(1.1);
+    background-color: greenyellow;
+  }
+}
+
+.head{
+  animation: heaad 2s infinite;
+}
+
+@keyframes heaad{
+  100%{
+    transform: translateY(-25px);
+    background-color: greenyellow;
+  }
+}
